@@ -1,0 +1,15 @@
+openai
+opencv-python
+faiss-cpu
+numpy
+pillow
+pytesseract
+google-genai==1.65.0
+python-dotenv==1.2.2
+openai-whisper
+deepgram-sdk==6.0.1
+librosa
+pydub
+black==26.1.0
+flake8==7.3.0
+psycopg2-binary

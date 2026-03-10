@@ -1,0 +1,18 @@
+# Temporary files
+temp/
+# Database files
+database/
+
+# Legacy and local test artifacts
+**.mp4
+**.json
+**.index
+**.png
+**.jpeg
+src/app.py.legacy
+indexed_videos.json
+video_multimodal_dataset.json
+
+.env
+
+**/__pycache__

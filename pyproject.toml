@@ -1,0 +1,29 @@
+[project]
+name = "rag-multimodal-hexagonal"
+version = "0.1.0"
+description = "A Multi-modal RAG system with Hexagonal Architecture for easy service swapping (OpenAI, Gemini, etc.)"
+authors = [
+    { name = "Multimodal Developer", email = "dev@example.com" }
+]
+requires-python = ">=3.10"
+dependencies = [
+    "openai",
+    "opencv-python",
+    "faiss-cpu",
+    "numpy",
+    "pillow",
+    "pytesseract",
+]
+
+[project.scripts]
+rag-multimodal = "src.main:main"
+
+[tool.setuptools.packages.find]
+where = ["."]
+include = ["src*"]
+
+[tool.black]
+line-length = 88
+
+[tool.pytest.ini_options]
+pythonpath = ["."]
